@@ -3,9 +3,9 @@ const sass = require('gulp-sass');
 
 // Sass task
 gulp.task( 'sass' , function() {
-	gulp.src('style/sass/**/*.scss')
+	gulp.src('style/sass/**/*.scss') // Change this line for different file structures
 	.pipe(sass())
-	.pipe(gulp.dest('.'))
+	.pipe(gulp.dest('.')) // Processed result will be output here
 });
 
 // Watch task
